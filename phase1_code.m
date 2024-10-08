@@ -33,7 +33,6 @@ xlabel('Sample Number');
 ylabel('Amplitude');
 
 % 3.6. Resample the audio if the sampling rate is not 16 kHz
-
 if Fs ~= 16000
     % Resample the audio
     audioData = resample(audioData, 16000, Fs);
